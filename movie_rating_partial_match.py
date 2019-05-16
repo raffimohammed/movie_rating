@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 import sys, requests, logging
 level = logging.INFO
-#level = logging.DEBUG
+level = logging.DEBUG
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',level=level)
 base_url="http://www.omdbapi.com/?apikey=8cfbd1c9&type=movie" 
 def lookup_rating_by_id(id): 
@@ -55,7 +55,7 @@ def lookup_rating_by_search(title):
 						if response_search_page.json()['Search'][j]['Title'] in rating_dict :
 							rating_dict[response_search_page.json()['Search'][j]['Title']].append(rating)
 						else:
-							# PUtting it in a list rather than assinging a value directly as there could be multiple movies with the same title
+							# Putting it in a list rather than assinging a value directly as there could be multiple movies with the same title
 							temp_rating_list = [rating]
 							rating_dict[response_search_page.json()['Search'][j]['Title']] = temp_rating_list
 					else:
