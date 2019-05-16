@@ -35,7 +35,7 @@ def lookup_rating_by_title(title):
 		else:
 			print 'The movie ' + title + ' does not have a Rotten Tomatoes rating.' 
 	else:
-		print response_title.json()['Error']
+		logging.error( response_title.json()['Error'])
 	return rating_bool, rating
 if __name__ == "__main__"  : 
 	if len(sys.argv) == 1: 

@@ -1,5 +1,5 @@
 The docker image can be build using this  command 'docker build -t raffimohammed/movie_rating_mindtree'.
 If you choose to you can download the pre-built docker image from dockerhub using 'docker pull raffimohammed/movie_rating_mindtree'.
-The docker container can be run like this 'docker run -i -t movie_rating_mindtree /bin/bash'.
+The docker container can be run like this 'docker run -i -t raffimohammed/movie_rating_mindtree /bin/bash'.
 On the command line this can be run to see how the python program can be used:: /movie_rating_title.py 
 To see the rating for the movie 'The matrix' run this: /movie_rating_title.py The matrix
