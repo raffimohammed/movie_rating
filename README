@@ -1,5 +1,13 @@
+Because the instructions were not clear as to whether partial matches of the title can be returned I chose two built two python programs. The first one will return if there is an exact match of the title. The second program will return all partial matches in the title. 
+	Example of an exact match:
+		root@afa3104ee0f8:/# /movie_rating_exact_match.py  Guardians of the Galaxy Vol. 2
+		The movie Guardians of the Galaxy Vol. 2 has a Rotten Tomatoes rating of 84%.
+	Example of partial matches:
+		root@afa3104ee0f8:/# /movie_rating_partial_match.py  Guardians of the Galaxy Vol. 2
+		The movie Guardians of the Galaxy Vol. 2 has a Rotten Tomatoes rating of 84%.
+		The movie Bonus Round: The Making of 'Guardians of the Galaxy Vol. 2' does not have a Rotten Tomatoes rating.
+		The movie Chris Pratt Shows You Around the Set of Guardians of the Galaxy Vol. 2 does not have a Rotten Tomatoes rating.
+
 The docker image can be build using this  command 'docker build -t raffimohammed/movie_rating_mindtree'.
 If you choose to you can download the pre-built docker image from dockerhub using 'docker pull raffimohammed/movie_rating_mindtree'.
 The docker container can be run like this 'docker run -i -t raffimohammed/movie_rating_mindtree /bin/bash'.
-On the command line this can be run to see how the python program can be used:: /movie_rating_title.py 
-To see the rating for the movie 'The matrix' run this: /movie_rating_title.py The matrix
