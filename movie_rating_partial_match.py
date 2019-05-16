@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 import sys, requests, logging
 level = logging.INFO
-level = logging.DEBUG
+#level = logging.DEBUG
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',level=level)
 base_url="http://www.omdbapi.com/?apikey=8cfbd1c9&type=movie" 
 def lookup_rating_by_id(id): 
