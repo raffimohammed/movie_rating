@@ -1,7 +1,6 @@
 The code for this excercise is available at https://github.com/raffimohammed/movie_rating
 The docker image for this excercise is available at https://hub.docker.com/r/raffimohammed/movie_rating_mindtree
-The docker image can be pulled with this command: docker pull raffimohammed/movie_rating_mindtree
-Because the instructions were not clear as to whether partial matches of the title can be returned I chose two built two python programs. The first one will return if there is an exact match of the title. The second program will return all partial matches in the title. 
+Because the instructions were not clear as to whether partial matches of the title can be returned I chose to build two python programs. The first one will return if there is an exact match of the title. The second program will return all partial matches in the title. 
 	Example of an exact match:
 		root@afa3104ee0f8:/# /movie_rating_exact_match.py  Guardians of the Galaxy Vol. 2
 		The movie Guardians of the Galaxy Vol. 2 has a Rotten Tomatoes rating of 84%.
